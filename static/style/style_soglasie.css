@@ -1,0 +1,132 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+/* Шрифты текта */
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("Roboto"),
+         /* Если не получилось, загрузит woff2 */
+         url("/fonts/roboto.woff2") format("woff2"),
+         /* Если браузер не поддерживает woff2, загрузит woff */
+         url("/fonts/roboto.woff") format("woff");
+  }
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+/* Вверх сайта с лого */
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e1edeb;
+}
+.logo>img {
+    height: 100px;
+}
+
+.phone>img {
+  width: 30px;
+}
+
+.phone {
+    display: flex;
+    color: #00a86b;
+}
+
+/* Меню */
+.menu {
+background-color: #1c1c1c;
+display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #00a86b;
+    color: #1c1c1c;
+  }
+  
+  .menu a.active {
+    background-color: #00a86b;
+    color: #fff;
+  }
+
+/* Кнопка наверх */
+.upward {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: url(upward.png);
+    background-size: cover;
+    z-index: 1;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.upward.active {
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Согласие */
+  .info>h2 {
+    background-color: #00a86b;
+    color: #fff;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info>p {
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+
+  .info {
+    background-color: #e1edeb;
+  }
+
+.bottom {
+    padding: 2%;
+    background-color: #e1edeb;
+}
+
+.bottom>a {
+    background-color: #00a86b;
+    color: #e1edeb;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 7px;
+    margin-left: 10%;
+}
+
+  /* Инфо компании */
+.logo_2 {
+    background-color: #00a86b;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.end {
+    padding: 2%;
+}
