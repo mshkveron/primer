@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Цены и услуги</title>
+    <link rel= "stylesheet" href = "static/style/style_3.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+    <div class="all">
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон" style="height: 30px; width: 30px">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+    <!-- Меню -->
+
+<div class="menu">
+
+    <a href="index.html">ГЛАВНАЯ</a>
+    <a href="page2.html">КАТАЛОГ</a>
+    <a href="page3.html" class="active">ЦЕНЫ И УСЛУГИ</a>
+    <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+    <a href="page5.html">КОНТАКТЫ</a>      
+
+
+</div>
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<!-- ЦЕНЫ И УСЛУГИ -->
+<div class="price-info">
+
+    <h2>ЦЕНЫ И УСЛУГИ</h2>
+    
+</div>
+
+<!-- Основа -->
+<div class="catalog-info">
+
+    <h3>УСЛУГИ</h3>
+    
+    </div>
+    
+    <!-- Услуги -->
+    <div class="catalog">
+        <!-- Разработка дизайна -->
+        <div class="product">
+        <img src="static/img/uslugi/dizain.jpg" height="300px" alt="Разработка дизайна">
+    
+            <div class="text">
+            <h3>РАЗРАБОТКА ДИЗАЙНА</h3>
+                <div class="text-info">
+                <p><span>Графический дизайн упаковки </span> — это подбор фирменных шрифтов, форм и конструкций, сканирование и фотосъемка наряду с оформлением, структурирование и макетирование информации в соответствии с правилами печати. Всё это придаст компании успешность рекламной политики.</p>
+                <p><span>Стоимость услуг</span> определяется дизайнером в зависимости от сложности заказа. Срок исполнения работ по графическому дизайну составляет от 1-го до 5-ти рабочих дней.</p>
+                <p>Для заказа дизайна упаковки и консультаций обращайтесь к нашим специалистам.</p>
+                <p>По результатам работы дизайнера, в соответствии с изображением мы можем изготовить печатную форму (клише).</p>
+                </div>
+    
+                <div class="buttom">
+                    <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- Нанесение флексопечати -->
+        <div class="product">
+            <img src="static/img/uslugi/pechat.jpg" height="300px" alt="Нанесение флексопечати">
+        
+                <div class="text">
+                <h3>НАНЕСЕНИЕ ФЛЕКСОПЕЧАТИ</h3>
+                    <div class="text-info">
+                    <p>В первую очередь, <span>флексопечать</span> представляет собой способ нанесения печати быстровысыхающими красками, наносящимися на гибкие материалы, при этом используя печатные формы или печатные клише. </p>
+                    <p><span>Флексопечать может наноситься на следующие виды гофроупаковки:</span></p>
+                    <p>1. лист ДС: двухслойный гофрокартон;</p>
+                    <p>2. лист или изделие: трехслойный гофрокартон (от Т-21 до Т-26, профили В и С);</p>
+                    <p>3. лист или изделие: пятислойный гофрокартон (от П-31 до П-33, профили ВВ, ВС, ВЕ, СЕ);</p>
+                    <p>4. лист или изделие: микрогофрокартон (от Т-22 до Т-24, профиль Е ).</p>
+                    <p><span>Флексопечать обычно отражает следующие необходимые данные о компании:</span> её адрес, логотип, наименование продукта, контактная информация компании и так далее.</p>
+                    <p>Двухцветная флексопечать может наноситься на гофроящики любых конструкций.</p>
+                    </div>
+        
+                    <div class="buttom">
+                        <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+                    </div>
+    
+                </div>
+        
+            </div>
+    
+            <!-- Доставка -->
+            <div class="product">
+                <img src="static/img/uslugi/dostavka.jpg" height="260px" alt="Доставка товара">
+            
+                    <div class="text">
+                    <h3>ДОСТАВКА ТОВАРА</h3>
+                        <div class="text-info">
+                        <p>По Вашей заявке,  мы организуем <span>доставку продукции</span> , как собственным, так и наемным транспортом. </p>
+                        <p>В целях удобства погрузо-разгрузочных работ, гофропродукция укладывается на поддоны и упаковывается в стретч пленку. Это защищает гофроизделия от пыли и влаги.</p>
+                        <p><span>Стоимость:</span></p>
+                        <p>1. Газель от 1050 рублей</p>
+                        <p>2. Сборный груз от 1500 рублей за палет</p>
+                        <p>3. Коробки для пиццы от 150 рублей</p>
+                        <p><span>Самовывоз:</span></p>
+                        <p>Если Вы планируете забирать гофрокартон или гофрокороба самовывозом, то необходимо оформление доверенности на получение товара. </p>
+                        <p><span>Режим работы склада:</span></p>
+                        <p>Пн. – Пт: с 9:00 до 17:00</p>
+                    </div>
+            
+                        <div class="buttom">
+                            <a href="page4.html">ОСТАВИТЬ ЗАЯВКУ</a>
+                        </div>
+        
+                    </div>
+            
+                </div>
+    </div>
+
+    <div class="catalog-info">
+
+        <h2>ЦЕНЫ</h2>
+        
+    </div>
+
+    <div class="photo_prise">
+
+<img src="static/img/uslugi/prise_1.jpg" width="600" alt="Цены на гофробумагу и коробки">
+<img src="static/img/uslugi/prise_2.jpg" height="900" alt="Цены на упаковочные материалы">
+
+    </div>
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+    <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+    
+    <div class="end">
+    <img src="static/img/map.svg" alt="Оренбург">
+    <span>г.Оренбург, ул. Невельская, 6/1</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+    <span>8(3532) 67-33-22</span>
+    </div>
+    
+    <div class="end">
+    <img src="static/img/mail.svg" alt="Коробки Оренбург">
+    <span>zakaz@karton56.ru</span>
+    </div>
+    
+    </div>
+
+    </div>
+</body>
+
+
+</html>

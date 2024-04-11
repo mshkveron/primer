@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Расчет стоимости</title>
+    <link rel= "stylesheet" href = "static/style/style_4.css">
+    <link rel="stylesheet" href="static/style/media.css">
+</head>
+
+
+<body>
+  <div class="all">
+
+    <!-- ВВерх сайта с лого -->
+    <div class="logo">
+
+        <img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+        <div> <h3>Главное предприятие г.Оренбург</h3>
+            <span>Производство гофрокартона и изделий из него</span> </div>
+        
+        <div class="phone">
+            <img src="static/img/phone.svg" alt="Телефон" style="height: 30px; width: 30px">
+            <h3>8(3532)67-33-22</h3>
+        </div> 
+        
+        </div>
+
+    <!-- Меню -->
+
+<div class="menu">
+
+    <a href="index.html">ГЛАВНАЯ</a>
+    <a href="page2.html">КАТАЛОГ</a>
+    <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+    <a href="page4.html" class="active">РАСЧЕТ СТОИМОСТИ</a>
+    <a href="page5.html">КОНТАКТЫ</a>      
+
+
+</div>
+
+
+<!-- РАСЧЕТ СТОИМОСТИ -->
+<div class="summ-info">
+
+    <h2>РАСЧЕТ СТОИМОСТИ</h2>
+    
+</div>
+
+<!-- Заявка -->
+
+<!-- Вид продукции: -->
+<div class="form">
+    <form>
+        <label for="vid_product" class="row">Вид продукции:</label>
+        <select id="vid_product" name="vid_product" autocomplete="off">
+          <option value="Гофрокартон">Гофрокартон</option>
+          <option value="Коробки">Коробки</option>
+          <option value="Гофролотки для овощей и фруктов">Гофролотки для ОВОЩЕЙ и ФРУКТОВ</option>
+          <option value="Гофролотки для банок и бутылок">Гофролотки для БАНОК и БУТЫЛОК</option>
+          <option value="Гофролотки для мясных полуфабрикатов">Гофролотки для МЯСНЫХ ПОЛУФАБРИКОТОВ</option>
+          <option value="Гофролотки для кондитерских изделий">Гофролотки для КОНДИТЕРСКИХ ИЗДЕЛИЙ</option>
+          <option value="Гофролотки для пиццы">Гофролотки для ПИЦЦЫ</option>
+          <option value="Комплектующие к гофрокоробкам: ВКЛАДЫШИ">Комплектующие к гофрокоробкам: ВКЛАДЫШИ</option>
+          <option value="Комплектующие к гофрокоробкам: РЕШЕТКИ">Комплектующие к гофрокоробкам: РЕШЕТКИ</option>
+          <option value="Комплектующие к гофрокоробкам: ПЕРЕГОРОДКИ">Комплектующие к гофрокоробкам: ПЕРЕГОРОДКИ</option>
+          <option value="Комплектующие к гофрокоробкам: ВСТАВКИ И ЛОЖМЕНТЫ">Комплектующие к гофрокоробкам: ВСТАВКИ И ЛОЖМЕНТЫ</option>
+          <option value="Лента малярная">Лента малярная</option>
+          <option value="Скотч с надписями">Скотч с надписями</option>
+          <option value="Скотч прозрачный">Скотч прозрачный</option>
+          <option value="Диспенсер для скотча">Диспенсер для скотча</option>
+          <option value="Стреч пленка">Стреч пленка</option>
+          <option value="Стреппинг лента">Стреппинг лента</option>
+        </select>
+      </form>
+
+      <!-- Длина -->
+      <div class="row">
+        <label>Длина:</label>
+        <input type="text" name="length" placeholder="в мм." 
+        minlength="1" maxlength="30"
+        title="Введите необходимую длину" autocomplete="off">
+      </div>
+
+      <!-- Ширина -->
+      <div class="row">
+        <label>Ширина:</label>
+        <input type="text" name="width" placeholder="в мм." 
+        minlength="1" maxlength="30"
+        title="Введите необходимую ширину" autocomplete="off">
+      </div>
+
+      <!-- Высота -->
+      <div class="row">
+        <label>Высота:</label>
+        <input type="text" name="height" placeholder="в мм." 
+        minlength="1" maxlength="30"
+        title="Введите необходимую высоту" autocomplete="off">
+      </div>
+
+      <!-- Тип гофрокартона: -->
+      <form>
+        <label for="tip_gofro" class="row">Тип гофрокартона:</label>
+        <select id="tip_gofro" name="tip_gofro" autocomplete="off">
+          <option value="В">В</option>
+          <option value="С">С</option>
+        </select>
+      </form>    
+
+      <!-- Марка: -->
+      <form>
+        <label for="marka" class="row">Марка:</label>
+        <select id="marka" name="marka" autocomplete="off">
+          <option value="Т-21">Т-21</option>
+          <option value="Т-22">Т-22</option>
+          <option value="Т-23">Т-23</option>
+          <option value="Т-24">Т-24</option>
+          <option value="Т-25">Т-25</option>
+          <option value="Т-26">Т-26</option>
+        </select>
+      </form> 
+
+      <!-- Цвет покровного слоя: -->
+      <form>
+        <label for="color" class="row">Цвет покровного слоя:</label>
+        <select id="color" name="color" autocomplete="off">
+          <option value="Бурый">Бурый</option>
+          <option value="Белый">Белый</option>
+        </select>
+      </form> 
+
+      <!-- Печать: -->
+      <form>
+        <label for="print" class="row">Печать:</label>
+        <select id="print" name="print" autocomplete="off">
+          <option value="Без печати">Без печати</option>
+          <option value="Печать в 1 цвет">Печать в 1 цвет</option>
+          <option value="Печать в 2 цвета">Печать в 2 цвета</option>
+        </select>
+      </form> 
+
+    <!-- Тираж: -->
+      <div class="row">
+        <label>Тираж:</label>
+        <input type="text" name="kolvo" placeholder="в шт." 
+        minlength="1" maxlength="30"
+        title="Введите необходимое количество продукции" autocomplete="off">
+      </div>
+
+      <!-- Упаковка -->
+      <form>
+        <label for="upakovka" class="row">Упаковать:</label>
+        <select id="upakovka" name="upakovka" autocomplete="off">
+          <option value="Нет">Нет</option>
+          <option value="Да">Да</option>
+        </select>
+      </form>
+
+      <!-- Доставка -->
+      <form>
+        <label for="dostavka" class="row">Доставка:</label>
+        <select id="dostavka" name="dostavka" autocomplete="off">
+          <option value="Нет">Нет</option>
+          <option value="Да">Да</option>
+        </select>
+      </form>
+
+<!-- Ваше имя -->
+<div class="row">
+    <label>Ваше имя:</label>
+    <input type="text" name="name" placeholder="Имя" required
+    minlength="1" maxlength="30"
+    title="Введите Ваше имя" autocomplete="off">
+  </div>
+
+  <!-- Номер телефона -->
+<div class="row">
+    <label>Номер телефона:</label>
+    <input type="text" name="nom_phone" placeholder="Телефон" required
+    minlength="1" maxlength="13"
+    title="Введите Ваш номер телефона" autocomplete="off">
+  </div>
+
+    <!-- Адрес доставки: -->
+<div class="row">
+    <label>Адрес доставки:</label>
+    <input type="text" name="adres" placeholder="Адрес доставки" 
+    minlength="1" maxlength="50"
+    title="Введите Ваш адрес для достаки" autocomplete="off">
+  </div>
+
+      <!-- Почта email -->
+<div class="row">
+    <label>Электронная почта:</label>
+    <input type="text" name="email" placeholder="Адрес электронной почты" 
+    minlength="1" maxlength="50"
+    title="Введите свою электронную почту" autocomplete="off">
+  </div>
+
+        <!-- Организация -->
+<div class="row">
+    <label>Название организации:</label>
+    <input type="text" name="organiz" placeholder="Организация" 
+    minlength="1" maxlength="50"
+    title="Введите название организации" autocomplete="off">
+  </div>
+
+          <!-- Доп. информация -->
+<div class="row">
+    <label>Доп. информация:</label>
+    <input type="text" name="dop_info" class="dop_info" placeholder="Дополнительная информация" 
+    title="Введите доп. информацию" autocomplete="off">
+  </div>
+
+  <!-- Согласие на обработку данных -->
+<div class="rule">
+<input type="checkbox" name="rule" checked required>
+<label for="rule"><a href="soglasie.html">Согласие на обработку персональных данных</a> </label>
+</div>
+
+<!-- Кнопка отправить -->
+<div class="bottom">
+<input type="submit" value="Отправить"/>
+</div>
+
+</div>
+
+<!-- Заполнение Google Таблицы -->
+<script>
+
+const URL_APP = "https://script.google.com/macros/s/AKfycbwVxJvFL6TW5iqlcrGQ_zm2KIpR7QbYZazxIlV3AGGJTQedqNidLd04FrI6wqkT808i/exec";
+
+// находим форму в документе
+const form = document.querySelector("#form");
+
+// указываем адрес отправки формы 
+form.action = URL_APP;
+
+// Вспомогательная функция проверки заполненной формы
+function isFilled(details) {
+  const {name, nom_phone, email, rule} = details;
+  if (!name) return false;
+  if (!nom_phone) return false;
+  if (!email) return false;
+  if (!rule) return false;
+  return true;
+}
+
+// навешиваем обработчик на отправку формы
+form.addEventListener("submit", async (ev) => {
+  // отменяем действие по умолчанию
+  ev.preventDefault();
+
+  // получаем ссылки на элементы формы 
+  const vid_product = document.querySelector("[name=vid_product]");
+  const length = document.querySelector("[name=length]");
+  const width = document.querySelector("[name=width]");
+  const height = document.querySelector("[name=height]");
+  const tip_gofro = document.querySelector("[name=tip_gofro]");
+  const marka = document.querySelector("[name=marka]");
+  const color = document.querySelector("[name=color]");
+  const print = document.querySelector("[name=print]");
+  const kolvo = document.querySelector("[name=kolvo]");
+  const upakovka = document.querySelector("[name=upakovka]");
+  const dostavka = document.querySelector("[name=dostavka]");
+  const name = document.querySelector("[name=name]");
+  const nom_phone = document.querySelector("[name=nom_phone]");
+  const adres = document.querySelector("[name=adres]");
+  const email = document.querySelector("[name=email]");
+  const organiz = document.querySelector("[name=organiz]");
+  const dop_info = document.querySelector("[name=dop_info]");
+  const rule = document.querySelector("[name=rule]");
+
+  // собираем данные из элементов формы
+  let details = {
+    vid_product: vid_product.value.trim(),
+    length: length.value.trim(),
+    width: width.value.trim(),
+    height: height.value.trim(),
+    tip_gofro: tip_gofro.value.trim(),
+    marka: marka.value.trim(),
+    color: color.value.trim(),
+    print: print.value.trim(),
+    kolvo: kolvo.value.trim(),
+    upakovka: upakovka.value.trim(),
+    dostavka: dostavka.value.trim(),
+    name: name.value.trim(),
+    nom_phone: nom_phone.value.trim(),
+    adres: adres.value.trim(),
+    email: email.value.trim(),
+    organiz: organiz.value.trim(),
+    dop_info: dop_info.value.trim(),
+    rule: rule.checked,
+  }
+
+  // если поля не заполнены - прекращаем обработку
+  if (!isFilled(details)) return;
+
+  // подготавливаем данные для отправки
+  let formBody = [];
+  for (let property in details) {
+    // кодируем названия и значения параметров
+    let encodedKey = encodeURIComponent(property);
+    let encodedValue = encodeURIComponent(details[property]);
+    formBody.push(encodedKey + "=" + encodedValue);
+  }
+
+  // склеиваем параметры в одну строку
+  formBody = formBody.join("&");
+
+  // выполняем отправку данных в Google Apps
+  const result = await fetch(URL_APP, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    },
+    mode: "cors",
+    body: formBody,
+  })
+  .then((res) => res.json())
+  .catch((err) => alert("Ошибка!"))
+
+  if (result.type === 'success') {
+    vid_product.value = '';
+    length.value = '';
+    width.value = '';
+    height.value = '';
+    tip_gofro.value = '';
+    marka.value = '';
+    color.value = '';
+    print.value = '';
+    kolvo.value = '';
+    upakovka.value = '';
+    dostavka.value = '';
+    name.value = '';
+    nom_phone.value = '';
+    adres.value = '';
+    email.value = '';
+    organiz.value = '';
+    dop_info.value = '';
+    alert('Спасибо за заявку, наш отдел в скором времени с Вами свяжется!')
+  }
+  if (result.type === 'error') {
+    alert(`Ошибка( ${result.errors})`)
+  }
+
+})
+
+</script>
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+  <img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+  
+  <div class="end">
+  <img src="static/img/map.svg" alt="Оренбург">
+  <span>г.Оренбург, ул. Невельская, 6/1</span>
+  </div>
+  
+  <div class="end">
+  <img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+  <span>8(3532) 67-33-22</span>
+  </div>
+  
+  <div class="end">
+  <img src="static/img/mail.svg" alt="Коробки Оренбург">
+  <span>zakaz@karton56.ru</span>
+  </div>
+  
+  </div>
+
+  </div>
+</body>
+
+
+</html>

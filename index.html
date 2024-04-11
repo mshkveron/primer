@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОренГофроТара Главная
+    </title>
+    <link rel= "stylesheet" href = "static/style/style_1.css">
+    <link rel="stylesheet" href="static/style/media.css">
+
+
+</head>
+
+<body>
+ <div class="all">
+    <!-- ВВерх сайта с лого -->
+<div class="logo">
+
+<img src="static/img/logo_1.svg" alt="Логотип ОренГофроТара"> 
+<div> <h3>Главное предприятие г.Оренбург</h3>
+    <span>Производство гофрокартона и изделий из него</span> 
+</div>
+
+<div class="phone">
+    <img src="static/img/phone.svg" alt="Телефон" >
+    <h3>8(3532)67-33-22</h3>
+</div> 
+
+</div>
+
+<!-- Меню -->
+
+<div class="menu">
+
+    <a href="index.html" class="active">ГЛАВНАЯ</a>
+    <a href="page2.html">КАТАЛОГ</a>
+    <a href="page3.html">ЦЕНЫ И УСЛУГИ</a>
+    <a href="page4.html">РАСЧЕТ СТОИМОСТИ</a>
+    <a href="page5.html">КОНТАКТЫ</a>      
+
+
+</div>
+
+
+<!-- Кнопка наверх -->
+<div class="upward" onclick="scrollTopTop()">
+
+</div>
+
+<!-- Кнопка наверх -->
+<script>
+    window.addEventListener('scroll', function(){
+        var scroll = document.querySelector('.upward');
+        scroll.classList.toggle("active", window.scrollY>500)
+    })
+    function scrollTopTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+</script>
+
+
+<div class="all-content">
+<!-- Видео -->
+
+<div class="video">
+
+<video class="video_media" src="static/video/video.mp4" autoplay muted loop></video>
+
+</div>
+
+<div class="intro_content">
+
+    <div class="container">
+    <h1 class="intro_title">ООО "ОРЕНГОФРОТАРА"</h1>
+    <h3 class="intro_text">КАЧЕСТВЕННАЯ ПРОДУКЦИЯ И ВЫГОДНЫЕ УСЛОВИЯ</h3>
+    </div>
+
+    <div class="buttom">
+        <a href="page4.html">УЗНАТЬ СТОИМОСТЬ</a>
+    </div>
+
+</div>
+
+
+<!-- Иконки info на зеленом фоне-->
+
+<div class="info">
+
+    <div class="info_conteiner">
+        <img src="static/img/info1.svg" alt="Качество продукции">
+    <p>КАЧЕСТВЕННАЯ ПРОДУКЦИЯ СВОЕГО ПРОИЗВОДСТВА</p>
+    </div>
+
+    <div class="info_conteiner">
+        <img src="static/img/info2.svg" alt="Компании">
+    <p>РАБОТАЕМ С БОЛЕЕ 30 КОМПАНИЯМИ</p>
+    </div>
+
+    <div class="info_conteiner">
+        <img src="static/img/info3.svg" alt="Любая сложность продукции">
+    <p>РАЗРАБОТКА ПРОДУКЦИИ ЛЮБОЙ СЛОЖНОСТИ</p>
+    </div>
+
+    <div class="info_conteiner">
+        <img src="static/img/info4.svg" alt="Доставка по РФ">
+    <p>ДОСТАВКА ПО ВСЕЙ РОССИИ</p>
+    </div>
+
+    <div class="info_conteiner">
+        <img src="static/img/info5.svg" alt="Экологически безопасно">
+    <p>ЭКОЛОГИЧЕСКИ БЕЗОПАСНАЯ ПРОДУКЦИЯ</p>
+    </div>
+   
+
+</div>
+
+
+
+
+<!-- Фото и текст 1 -->
+
+<div class="photos">
+<div class="photo1">
+    <img src="static/img/img1.jpg" alt="Разработка гофрокартона" >
+</div>
+
+
+    <div class="photo1_text">
+    <h4>Предприятие ООО «ОренГофроТара» успешно  работает на рынке производства гофрокартона Оренбургской области с 2013 года. </h4>
+    <h4>Основным направлением деятельности является производство гофрокартона и изделий из него. Успешная работа всего коллектива профессионалов всего за несколько лет сформировала имидж фирмы, как надежного делового партнера.</h4>
+    <h4>Предприятие обеспечено самым современным технологическим оборудованием. Ведётся  постоянный контроль за производством. Всё это позволяет нам обеспечить высокое качество продукции и соответствие заявленным маркам по ГОСТ 52901-2007, ГОСТ 34033-2016, ГОСТ 9142-2014.</h4>
+    </div>
+
+    <!-- Фото и текст 2 -->
+    <div class="photo2">
+        <img src="static/img/img2.jpg" alt="Гофрокартон и коробки" >
+    </div>
+    
+    
+        <div class="photo2_text">
+        <h2>НАША ПРОДУКЦИЯ</h2>
+            <p>1. Гофрокартон товарный (в листах и рулонах)</p>
+            <p>2. Четырёхклапанные короба (упаковочные гофроящики)</p>
+            <p>3. Изделия сложной конструкции (лотки)</p>
+            <p>4. Комплектующие к коробам (прокладки, вкладыши, решетки и т.д.)</p>
+
+        </div>
+    </div>
+    
+<!-- Как мы работаем -->
+
+<div class="work-container">
+
+    <div>    
+        <h1>КАК МЫ РАБОТАЕМ</h1>
+        <h4>ОФОРМЛЕНИЕ И ЗАКАЗ ПРОДУКЦИИ</h4>
+    </div>
+
+    <!-- Этапы работы -->
+</div>
+
+<div class="work-number">
+
+    <div class="text_work">
+    <div class="circle">
+    1
+    </div>
+    <h4>ЗАЯВКА</h4>
+    <p>Для точного расчета заказа <a href="page4.html">оставьте заявку</a> на нашем сайте или позвоните по телефону +7(3532) 67-33-22</p>
+    </div>
+
+    <div class="text_work">
+    <div class="circle">
+    2
+    </div>
+    <h4>КОНСУЛЬТАЦИЯ И РАСЧЕТ</h4>
+    <p>После обработки Вашей заявки мы Вам перезвоним и озвучим стоимость заказа. Для постоянных и оптовых клиентов у нас всегда есть «особые» условия сотрудничества</p>
+    </div>
+
+    <div class="text_work">
+    <div class="circle">
+    3
+    </div>
+    <h4>ОБРАЗЕЦ</h4>
+    <p>Мы всегда готовы выслать Вам пробный образец, чтобы Вы могли выбрать толщину картона и убедиться в нашем качестве лично!</p>
+    </div>
+
+</div>
+
+<div class="work-number">
+
+    <div class="text_work">
+    <div class="circle">
+    4
+    </div>
+    <h4>ДОГОВОР</h4>
+    <p>Подписываем договор и выставляем счет на предоплату. Также вы можете оплатить заказ любым другим удобным Вам способом!</p>
+    </div>
+
+    <div class="text_work">
+    <div class="circle">
+    5
+    </div>
+    <h4>СОГЛАСОВАНИЕ МАКЕТА</h4>
+    <p>Если Вам необходимо брендирование упаковки, мы разработаем для Вас макет. Это занимает не более 2-х рабочих дней</p>
+    </div>
+
+    <div class="text_work">
+    <div class="circle">
+    6
+    </div>
+    <h4>ПРИЗВОДСТВО</h4>
+    <p>Мы выполним Ваш заказ в строго обозначенные сроки. Выполним ваш заказ оперативно!</p>
+    </div>
+
+</div>
+
+<div class="work-number">
+
+    <div class="text_work2">
+    <div class="circle">
+    7
+    </div>
+    <h4>ДОСТАВКА</h4>
+    <p>Мы отправим продукцию до указанного адреса любым удобным для вас способом!</p>
+    </div>
+
+</div>
+
+
+<!-- Инфо Компании -->
+<div class="logo_2">
+
+<img src="static/img/logo2.svg" alt="ОренГофроТара гофрокартон Оренбург">
+
+<div class="end">
+<img src="static/img/map.svg" alt="Оренбург">
+<span>г.Оренбург, ул. Невельская, 6/1</span>
+</div>
+
+<div class="end">
+<img src="static/img/phone.svg" alt="Телефон производство картона Оренбург">
+<span>8(3532) 67-33-22</span>
+</div>
+
+<div class="end">
+<img src="static/img/mail.svg" alt="Коробки Оренбург">
+<span>zakaz@karton56.ru</span>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+</body>    
+
+
+
+</html>
